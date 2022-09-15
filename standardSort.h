@@ -8,6 +8,7 @@
  */
 
 #include "sort.h"
+#include<algorithm>
 
 class StandardSort : public Sort{
 
