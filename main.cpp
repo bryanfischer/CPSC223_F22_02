@@ -58,7 +58,7 @@ int main(int argc, char *argv[]){
     //add insertion sort to vector
 
     //go through each object in the vector and test each sort
-    for(int i = 0; i < sortVector.size(); i++){
+    for(std::size_t i = 0; i < sortVector.size(); i++){
         cout << "--------------------------------------------------------------------------------" << endl;
         cout << sortVector.at(i)->toString() << endl;
         testSort(sortVector.at(i), vec, "Ascending", n, 5);
@@ -115,7 +115,7 @@ void testSort(Sort* sort, vector<int> &vec, string initialCondition, int size, i
 }
 
 void printVector(vector<int> &vec){
-    for(int i = 0; i < vec.size(); i++){
+    for(std::size_t i = 0; i < vec.size(); i++){
         cout << vec.at(i) << " ";
     }
     cout << endl;

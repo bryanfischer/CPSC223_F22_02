@@ -44,7 +44,7 @@ class Sort{
 
         void checkSorted(std::vector<int> &vec){
             if(vec.size() > 1){
-                for(int i = 1; i < vec.size(); i++){
+                for(std::size_t i = 1; i < vec.size(); i++){
                     assert (vec.at(i - 1) <= vec.at(i));
                 }
             }
